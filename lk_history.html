@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Традиционная иконка сайта, размер 16x16, прозрачность поддерживается. Рекомендуемый формат: .ico или .png -->
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#725653">
+		<meta name="theme-color" content="#725653">
+
+		<!-- Подключение шрифтов с гугла -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/swiper.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<button class="close"></button>
+
+					<div class="mob_scroll">
+						<div class="info">
+							<div class="cont row">
+								<a href="/" class="logo">
+									<img src="images/logo.svg" alt="">
+								</a>
+
+								<div class="search">
+									<form action="">
+										<input type="text" name="" value="" class="input">
+
+										<button type="submit" class="submit_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+										</button>
+									</form>
+								</div>
+
+								<div class="contacts">
+									<div class="phone">
+										<a href="tel:+79859272318">+7 985 927-23-18</a>
+									</div>
+
+									<button class="callback_btn modal_link" data-content="#callback_modal">Заказать звонок</button>
+								</div>
+
+								<div class="socials">
+									<a href="/" target="_blank" rel="noopener nofollow" class="instagram_link">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_instagram"></use></svg>
+									</a>
+
+									<a href="/" target="_blank" rel="noopener nofollow" class="facebook_link">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_facebook"></use></svg>
+									</a>
+
+									<a href="/" target="_blank" rel="noopener nofollow" class="pinterest_link">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_pinterest"></use></svg>
+									</a>
+								</div>
+
+								<div class="links">
+									<div class="account">
+										<button class="link modal_link" data-content="#login_modal">
+											<div class="icon">
+												<svg><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+											</div>
+											<div>Личный кабинет</div>
+										</button>
+									</div>
+
+									<div class="favorite">
+										<a href="/" class="link">
+											<div class="icon">
+												<svg><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+											</div>
+											<div>Избранное</div>
+										</a>
+									</div>
+
+									<div class="cart">
+										<a href="/" class="link">
+											<div class="icon">
+												<svg><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
+											</div>
+											<div>Корзина</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="bottom">
+							<div class="cont">
+								<nav class="menu row">
+									<div class="item">
+										<a href="/" class="sub_link">
+											Выкройки<span class="arr"></span>
+										</a>
+
+										<div class="sub_menu">
+											<div class="row tabs_container">
+												<div class="tabs">
+													<button data-content="#sub_menu1_tab1" data-level="level1" class="active">ЖЕНСКИЕ ВЫКРОЙКИ</button>
+
+													<button data-content="#sub_menu1_tab2" data-level="level1">МУЖСКИЕ ВЫКРОЙКИ</button>
+
+													<button data-content="#sub_menu3_tab2" data-level="level1">ДЕТСКИЕ ВЫКРОЙКИ</button>
+												</div>
+
+
+												<div class="tab_content level1 active" id="sub_menu1_tab1">
+													<div class="items">
+														<div><a href="/">Коллекции</a></div>
+														<div><a href="/">Бесплатные выкройки</a></div>
+														<div><a href="/">Выкройки с подробным описанием пошива с фотографиями</a></div>
+														<div><a href="/">Коллаборация с блогерами</a></div>
+														<div><a href="/">Выкройки для начинающих</a></div>
+														<div><a href="/">Шьем из трикотажа</a></div>
+														<div><a href="/">Базовые лекала</a></div>
+														<div><a href="/">Для дома</a></div>
+														<div><a href="/">Для офиса</a></div>
+														<div><a href="/">Для спорта</a></div>
+														<div><a href="/">Комплекты</a></div>
+														<div><a href="/">Выкройки с краткой последовательностью сборки изделия</a></div>
+														<div><a href="/">Приспособления для шитья</a></div>
+														<div><a href="/">Шаблоны для иллюстрации</a></div>
+														<div><a href="/">Выкройки для печати на плоттере</a></div>
+														<div><a href="/">Распродажа</a></div>
+													</div>
+												</div>
+
+
+												<div class="tab_content level1" id="sub_menu1_tab2">
+
+												</div>
+
+
+												<div class="tab_content level1" id="sub_menu1_tab3">
+
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<svg class="sep"><use xlink:href="images/sprite.svg#ic_wave"></use></svg>
+
+									<div class="item">
+										<a href="/">Оплата и доставка</a>
+									</div>
+
+									<svg class="sep"><use xlink:href="images/sprite.svg#ic_wave"></use></svg>
+
+									<div class="item">
+										<a href="/">О нас</a>
+									</div>
+
+									<svg class="sep"><use xlink:href="images/sprite.svg#ic_wave"></use></svg>
+
+									<div class="item">
+										<a href="/">Блог</a>
+									</div>
+
+									<svg class="sep"><use xlink:href="images/sprite.svg#ic_wave"></use></svg>
+
+									<div class="item">
+										<a href="/">Контакты</a>
+									</div>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="cont">
+						<a href="/" class="logo">
+							<img src="images/logo.svg" alt="">
+						</a>
+
+						<div class="contacts">
+							<div class="phone">
+								<a href="tel:+79859272318">+7 985 927-23-18</a>
+							</div>
+
+							<button class="callback_btn modal_link" data-content="#callback_modal">Заказать звонок</button>
+						</div>
+
+						<div class="links">
+							<div class="search modal_cont">
+								<button class="link mini_modal_btn" data-modal-id="#mob_search_modal">
+									<svg><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+								</button>
+
+								<div class="mini_modal" id="mob_search_modal">
+									<form action="">
+										<input type="text" name="" value="" class="input">
+
+										<button type="submit" class="submit_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+										</button>
+									</form>
+								</div>
+							</div>
+
+							<div class="account">
+								<button class="link modal_link" data-content="#login_modal">
+									<svg><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+								</button>
+							</div>
+
+							<div class="favorite">
+								<a href="/" class="link">
+									<svg><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+								</a>
+							</div>
+
+							<div class="cart">
+								<a href="/" class="link">
+									<svg><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
+								</a>
+							</div>
+						</div>
+
+						<button class="mob_menu_btn">
+							<span></span>
+						</button>
+					</div>
+				</section>
+
+
+				<section class="page_head">
+					<div class="cont">
+						<div class="breadcrumbs">
+							<a href="/">Главная</a> <span class="sep">—</span>
+							<span class="current">Личный кабинет</span>
+						</div>
+
+						<h1 class="page_title">Личный кабинет</h1>
+					</div>
+				</section>
+
+
+				<section class="lk_info content_flex block">
+					<div class="cont row">
+						<aside>
+							<div class="links">
+								<div><a href="/">Мои данные</a></div>
+
+								<div><a class="active">Заказы</a></div>
+
+								<div><a href="/">Выйти</a></div>
+							</div>
+						</aside>
+
+
+						<section class="content">
+							<section class="history accordion">
+								<div class="block_title">Заказы</div>
+
+								<div class="titles">
+									<div class="col_number">Номер заказа</div>
+									<div class="col_date">Дата оформления</div>
+									<div class="col_status">Статус</div>
+									<div class="col_payment">Вид оплаты</div>
+									<div class="col_price">Стоимость</div>
+								</div>
+
+
+								<div class="order item">
+									<div class="head">
+										<div class="col_number" data-column="Номер заказа">4523</div>
+										<div class="col_date" data-column="Дата оформления">05.06.2019</div>
+										<div class="col_status red" data-column="Статус">Отменен</div>
+										<div class="col_payment" data-column="Вид оплаты">онлайн-оплата</div>
+										<div class="col_price" data-column="Стоимость">109 руб.</div>
+									</div>
+
+									<div class="data cart_info">
+										<table>
+											<thead>
+												<tr>
+													<th colspan="2">Наименование</th>
+													<th>Размер</th>
+													<th>Цена</th>
+												</tr>
+											</thead>
+
+											<tbody>
+												<tr>
+													<td class="thumb">
+														<a href="/" target="_blank">
+															<img data-src="images/tmp/product_thumb.jpg" alt="" class="lozad">
+														</a>
+													</td>
+
+													<td class="name">
+														<a href="/" target="_blank">Платье #88</a>
+													</td>
+
+													<td class="size" data-column="Размер">38, рост 164-170</td>
+
+													<td class="price" data-column="Цена">
+														<div class="old">129 руб.</div>
+														<div>109 руб.</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+
+								<div class="order item">
+									<div class="head">
+										<div class="col_number" data-column="Номер заказа">4523</div>
+										<div class="col_date" data-column="Дата оформления">10.12.2018</div>
+										<div class="col_status green" data-column="Статус">Получен</div>
+										<div class="col_payment" data-column="Вид оплаты">онлайн-оплата</div>
+										<div class="col_price" data-column="Стоимость">50 руб.</div>
+									</div>
+
+									<div class="data cart_info">
+										<table>
+											<thead>
+												<tr>
+													<th colspan="2">Наименование</th>
+													<th>Размер</th>
+													<th>Цена</th>
+												</tr>
+											</thead>
+
+											<tbody>
+												<tr>
+													<td class="thumb">
+														<a href="/" target="_blank">
+															<img data-src="images/tmp/product_thumb.jpg" alt="" class="lozad">
+														</a>
+													</td>
+
+													<td class="name">
+														<a href="/" target="_blank">Платье #88</a>
+													</td>
+
+													<td class="size" data-column="Размер">38, рост 164-170</td>
+
+													<td class="price" data-column="Цена">
+														<div class="old">129 руб.</div>
+														<div>109 руб.</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+
+								<div class="order item">
+									<div class="head">
+										<div class="col_number" data-column="Номер заказа">4523</div>
+										<div class="col_date" data-column="Дата оформления">05.06.2019</div>
+										<div class="col_status red" data-column="Статус">Отменен</div>
+										<div class="col_payment" data-column="Вид оплаты">онлайн-оплата</div>
+										<div class="col_price" data-column="Стоимость">109 руб.</div>
+									</div>
+
+									<div class="data cart_info">
+										<table>
+											<thead>
+												<tr>
+													<th colspan="2">Наименование</th>
+													<th>Размер</th>
+													<th>Цена</th>
+												</tr>
+											</thead>
+
+											<tbody>
+												<tr>
+													<td class="thumb">
+														<a href="/" target="_blank">
+															<img data-src="images/tmp/product_thumb.jpg" alt="" class="lozad">
+														</a>
+													</td>
+
+													<td class="name">
+														<a href="/" target="_blank">Платье #88</a>
+													</td>
+
+													<td class="size" data-column="Размер">38, рост 164-170</td>
+
+													<td class="price" data-column="Цена">
+														<div class="old">129 руб.</div>
+														<div>109 руб.</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+
+								<div class="order item">
+									<div class="head">
+										<div class="col_number" data-column="Номер заказа">4523</div>
+										<div class="col_date" data-column="Дата оформления">10.12.2018</div>
+										<div class="col_status green" data-column="Статус">Получен</div>
+										<div class="col_payment" data-column="Вид оплаты">онлайн-оплата</div>
+										<div class="col_price" data-column="Стоимость">50 руб.</div>
+									</div>
+
+									<div class="data cart_info">
+										<table>
+											<thead>
+												<tr>
+													<th colspan="2">Наименование</th>
+													<th>Размер</th>
+													<th>Цена</th>
+												</tr>
+											</thead>
+
+											<tbody>
+												<tr>
+													<td class="thumb">
+														<a href="/" target="_blank">
+															<img data-src="images/tmp/product_thumb.jpg" alt="" class="lozad">
+														</a>
+													</td>
+
+													<td class="name">
+														<a href="/" target="_blank">Платье #88</a>
+													</td>
+
+													<td class="size" data-column="Размер">38, рост 164-170</td>
+
+													<td class="price" data-column="Цена">
+														<div class="old">129 руб.</div>
+														<div>109 руб.</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</section>
+						</section>
+					</div>
+				</section>
+
+
+				<section class="subscribe">
+					<div class="cont row">
+						<div class="info">
+							<div class="title">Хотите быть в курсе наших новостей, акций, новинок и обзоров?</div>
+
+							<div class="desc">Оформите подписку на нашу рассылку</div>
+						</div>
+
+						<form action="">
+							<input type="email" name="" value="" class="input" placeholder="Введите свой e-mail">
+
+							<button type="submit" class="submit_btn">Подписаться</button>
+
+							<div class="agree">
+								Нажимая на кнопку, я соглашаюсь на обработку моих персональных данных и принимаю политику конфиденциальности
+							</div>
+						</form>
+					</div>
+
+					<img data-src="images/bg_subscribe.svg" alt="" class="bg lozad">
+				</section>
+			</div>
+
+
+			<footer>
+				<div class="info">
+					<div class="cont row">
+						<div class="col_left">
+							<div class="logo">
+								<img src="images/logo_white.svg" alt="">
+							</div>
+
+							<div class="socials">
+								<a href="/" target="_blank" rel="noopener nofollow" class="instagram_link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_instagram"></use></svg>
+								</a>
+
+								<a href="/" target="_blank" rel="noopener nofollow" class="facebook_link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_facebook"></use></svg>
+								</a>
+
+								<a href="/" target="_blank" rel="noopener nofollow" class="pinterest_link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_pinterest"></use></svg>
+								</a>
+							</div>
+						</div>
+
+						<div class="links">
+							<div class="title">Информация о компании</div>
+
+							<div class="items">
+								<div><a href="/">О нас</a></div>
+								<div><a href="/">Блог</a></div>
+								<div><a href="/">Контакты</a></div>
+							</div>
+						</div>
+
+						<div class="links">
+							<div class="title">Поддержка клиентов</div>
+
+							<div class="items">
+								<div><a href="/">Оплата и доставка</a></div>
+								<div><a href="/">Выкройки</a></div>
+							</div>
+						</div>
+
+						<div class="contacts">
+							<div class="phone">
+								<a href="tel:+79859272318">
+									<div class="icon">
+										<svg><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+									</div>
+									<span>+7 985 927-23-18</span>
+								</a>
+							</div>
+
+							<div class="email">
+								<a href="mailto:info@inter-dioks.ru">
+									<div class="icon">
+										<svg><use xlink:href="images/sprite.svg#ic_email"></use></svg>
+									</div>
+									<span>info@inter-dioks.ru</span>
+								</a>
+							</div>
+
+							<div class="location">
+								<div class="icon">
+									<svg><use xlink:href="images/sprite.svg#ic_location"></use></svg>
+								</div>
+								<span>Москва, Саморы Машела 2-а</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="bottom">
+					<div class="cont row">
+						<div class="copyright">2020 - Интернет-магазин ООО “Интер ДИОКС”. Все права защищены.</div>
+
+						<div class="privacy_policy">
+							<a href="/">Политика конфиденциальности</a>
+						</div>
+
+						<div class="creator">
+							<a href="/" target="_blank" rel="noopener">Разработка сайта - Точка.ру</a>
+						</div>
+					</div>
+				</div>
+
+
+				<img data-src="images/bg_footer.svg" alt="" class="bg lozad">
+			</footer>
+
+
+			<div class="buttonUp">
+				<button>
+					<svg class="icon"><use xlink:href="images/sprite.svg#ic_buttonUp"></use></svg>
+				</button>
+			</div>
+
+			<div class="overlay"></div>
+
+			<img data-src="images/bg_wrap.svg" alt="" class="bg lozad">
+		</div>
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<section class="modal" id="callback_modal">
+			<div class="block_head">
+				<div class="title">Обратный звонок</div>
+			</div>
+
+			<div class="modal_data">
+				<form action="" class="form">
+					<div class="line">
+						<div class="field">
+							<input type="text" name="" value="" class="input" placeholder="Ваше имя">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="tel" name="" value="" class="input" placeholder="Телефон">
+						</div>
+					</div>
+
+					<div class="line agree">
+						<input type="checkbox" name="agree" id="callback_agree_check">
+						<label for="callback_agree_check">
+							Нажимая на кнопку, я соглашаюсь на обработку моих персональных данных и принимаю <a href="/" target="_blank">политику конфиденциальности</a>
+						</label>
+					</div>
+
+					<div class="submit">
+						<button type="submit" class="submit_btn">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+
+		<section class="modal" id="login_modal">
+			<div class="block_head">
+				<div class="title">Вход</div>
+			</div>
+
+			<div class="modal_data">
+				<form action="" class="form custom_submit">
+					<div class="line">
+						<div class="field">
+							<input type="text" name="" value="" class="input" placeholder="Телефон или e-mail">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="password" name="" value="" class="input" placeholder="Пароль">
+						</div>
+					</div>
+
+					<div class="line recovery">
+						<div class="field">
+							<button class="link modal_link" data-content="#recovery_modal">Забыли пароль?</button>
+						</div>
+					</div>
+
+
+					<div class="submit">
+						<button type="submit" class="submit_btn">Войти</button>
+					</div>
+				</form>
+
+
+				<div class="links">
+					<div>или</div>
+
+					<button class="link modal_link" data-content="#register_modal">Зарегистрироваться</button>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="modal" id="recovery_modal">
+			<div class="block_head">
+				<div class="title">Восстановление пароля</div>
+			</div>
+
+			<div class="modal_data">
+				<form action="" class="form custom_submit">
+					<div class="line">
+						<div class="field">
+							<input type="email" name="" value="" class="input" placeholder="E-mail">
+						</div>
+					</div>
+
+
+					<div class="submit">
+						<button type="submit" class="submit_btn">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+
+		<section class="modal" id="register_modal">
+			<div class="block_head">
+				<div class="title">Регистрация</div>
+			</div>
+
+			<div class="modal_data">
+				<form action="" class="form custom_submit">
+					<div class="line">
+						<div class="field">
+							<input type="text" name="" value="" class="input" placeholder="Ваше имя">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="email" name="" value="" class="input" placeholder="E-mail">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="tel" name="" value="" class="input" placeholder="Телефон">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="password" name="" value="" class="input" placeholder="Пароль">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="password" name="" value="" class="input" placeholder="Пароль еще раз">
+						</div>
+					</div>
+
+					<div class="line agree">
+						<input type="checkbox" name="agree" id="register_agree_check">
+						<label for="register_agree_check">
+							Нажимая на кнопку, я соглашаюсь на обработку моих персональных данных и принимаю <a href="/" target="_blank">политику конфиденциальности</a>
+						</label>
+					</div>
+
+
+					<div class="submit">
+						<button type="submit" class="submit_btn">Зарегистрироваться</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+
+		<section class="modal" id="action_success_modal">
+			<div class="text">Ваше сообщение отправлено</div>
+		</section>
+
+		<section class="modal" id="subscribe_success_modal">
+			<div class="text">Вы подписались на рассылку</div>
+		</section>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/lozad.min.js"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
